@@ -1,7 +1,7 @@
-<!-- TODO-1-3 Créer une vue blade "home.blade.php" dans "resources/views" avec "Hello World - view!" affiché -->
-<!-- TODO-1-4 Renvoyer la vue dans le contrôleur et tester d'accéder à "/" -->
+<!-- TODO-1-3 (DONE) Créer une vue blade "home.blade.php" dans "resources/views" avec "Hello World - view!" affiché -->
+<!-- TODO-1-4 (DONE) Renvoyer la vue dans le contrôleur et tester d'accéder à "/" -->
 
-<!-- TODO-2-0 Ajouter le contenu de la nouvelle vue "home" https://codepen.io/spicypaper/pen/wvemNKj et
+<!-- TODO-2-0 (DONE) Ajouter le contenu de la nouvelle vue "home" https://codepen.io/spicypaper/pen/wvemNKj et
     ajouter le lien vers la vue "home" dans la navbar -->
 
 <!-- TODO-4-3 Créer une vue blade layout permettant de fournir une base pour les autres vues "views/layout/app.blade.php" -->
@@ -96,6 +96,26 @@
         </style>
     </head>
     <body class="antialiased">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="TODO books">Books</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="TODO to order">Order</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         @if (count($users) > 0)
             <h1 style="color: green">You are basically READY for the workshop ;)</h1>
         @else
