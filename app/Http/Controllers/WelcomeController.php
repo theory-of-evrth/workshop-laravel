@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 // TODO-1-0 (DONE) Créer un contrôleur "HomeController" --> php artisan make:controller HomeController
 // TODO-1-1 (DONE) Créer la méthode index pour renvoyer "hello world!"
 
-// TODO-4-0 Créer un contrôleur "BookController" capable de traiter la ressource "Book" --> php artisan... --resource
-// TODO-4-1 Compléter la fonction "index" afin de retourner tous les livres
+// TODO-4-0 (DONE) Créer un contrôleur "BookController" capable de traiter la ressource "Book" --> php artisan... --resource
+// TODO-4-1 (DONE) Compléter la fonction "index" afin de retourner tous les livres
 
 // TODO-5-3 Relier les nouvelles vues aux méthodes de "BookController" et essayer d'accéder à chaque vues :
 //      /books, /books/1, /books/1/edit, /books/create
