@@ -17,8 +17,8 @@ class BookSeeder extends Seeder
     {
         DB::table('books')->insert([
             'title' => Str::random(10),
-            'pages' => Number::random(),
-            'quantity' => Number::random(),
+            'pages' => 162,
+            'quantity' => 1,
         ]);
         DB::table('books')->insert([
             'title' => "Old Booklette",
