@@ -97,7 +97,7 @@
     </head>
     <body class="antialiased">
         @if (count($users) > 0)
-            <h1 style="color: green">You are READY for the workshop ;)</h1>
+            <h1 style="color: green">You are basically READY for the workshop ;)</h1>
         @else
             <h1 style="color: red">You are NOT ready for the workshop :(</h1>
             <p>Did you migrate and seed the database successfully?</p>
