@@ -13,8 +13,8 @@
 <!-- TODO-4-8 (DONE) Améliorer la vue books pour afficher les livres dans un tableau https://codepen.io/spicypaper/pen/gOReEwE -->
 <!-- TODO-4-9 (DONE) Ajouter le lien à la vue books dans "layout.app" -->
 
-<!-- TODO-5-0 Créer un dossier "books" dans "views" afin de regrouper les vues -->
-<!-- TODO-5-1 Renommer la vue "book" en "index" (attention à adapter le contrôleur) -->
+<!-- TODO-5-0 (DONE) Créer un dossier "books" dans "views" afin de regrouper les vues -->
+<!-- TODO-5-1 (DONE) Renommer la vue "book" en "index" (attention à adapter le contrôleur) -->
 <!-- TODO-5-2 Créer les vues manquantes afin de compléter le CRUD de "books" (create, edit, index, show) et
     y inscrire quelque chose de temporaire -->
 <!-- TODO-5-4 Ajouter des boutons d'actions dans la vue "index"
