@@ -48,7 +48,9 @@ class BookController extends Controller
         $book->quantity = $validatedData['quantity'];
         $book->save();
 
-        return redirect("books")->with('Success','Book created sucessfully');
+        $message = "Book " . $book->title . " created succesfully";
+
+        return redirect("books")->with('success',$message);
     }
 
     public function update(Request $request, string $id)
@@ -65,13 +67,17 @@ class BookController extends Controller
         $book->quantity = $validatedData['quantity'];
         $book->save();
 
-        return redirect("books")->with('Success','Book updated sucessfully');
+        $message = "Book " . $book->title . " updated succesfully";
+
+        return redirect("books/$id/edit")->with('success',$message);
     }
 
     public function destroy(Request $request, string $id)
     {
+        $message = "Book " . Book::find($id)->title . " deleted succesfully";
+
         Book::destroy($id);
 
-        return redirect("books")->with('Success','Book deleted sucessfully');
+        return redirect("books")->with('success', $message);
     }
 }

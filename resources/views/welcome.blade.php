@@ -31,7 +31,7 @@
         <button type="submit" class="btn btn-danger">Supprimer</button>
     </form>
 -->
-<!-- TODO-5-7 Réceptionner et afficher les message de confirmations et tester le bouton "delete"
+<!-- TODO-5-7 (DONE) Réceptionner et afficher les message de confirmations et tester le bouton "delete"
     1. Modifier "app.blade.php"
     2. Accéder aux message via Session::get("...") et l'afficher dans le div "container" au dessus du "yield content"
     3. Utiliser les alert bootstrap pour faire quelque de plus esthétique
