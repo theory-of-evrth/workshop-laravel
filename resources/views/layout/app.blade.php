@@ -51,6 +51,22 @@
             </div>
         @endif
 
+        @if (Session::has('errors'))
+            <div class="alert alert-warning" role="alert">
+                Error spotted, cannot perform action!
+                <ul>
+
+                @foreach(Session::get('errors')->all() as $error)
+
+                <li>{{$error}}</li>
+
+                @endforeach
+
+                </ul>
+
+            </div>
+        @endif
+
 
         <div class="contentcontainer">
             @yield('content')

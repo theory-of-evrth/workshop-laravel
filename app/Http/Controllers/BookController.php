@@ -26,6 +26,7 @@ class BookController extends Controller
         }
 
         $books = Book::all();
+        $books = Book::paginate(5);
         return view('books/index', ['books' => $books]);
     }
 
@@ -37,9 +38,9 @@ class BookController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'title' => 'required|string|max:255',
-            'pages' => 'required|integer|max:20000',
-            'quantity' => 'required|integer|max:20000'
+            'title' => 'required|string|min:5|max:255',
+            'pages' => 'required|integer|min:0|max:1000',
+            'quantity' => 'required|integer|min:0|max:100'
         ]);
 
         $book = new Book();
@@ -56,9 +57,9 @@ class BookController extends Controller
     public function update(Request $request, string $id)
     {
         $validatedData = $request->validate([
-            'title' => 'required|string|max:255',
-            'pages' => 'required|integer|max:20000',
-            'quantity' => 'required|integer|max:20000'
+            'title' => 'required|string|min:5|max:255',
+            'pages' => 'required|integer|min:0|max:1000',
+            'quantity' => 'required|integer|min:0|max:100'
         ]);
 
         $book = Book::find($id);
