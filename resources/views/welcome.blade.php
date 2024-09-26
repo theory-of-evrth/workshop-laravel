@@ -15,9 +15,9 @@
 
 <!-- TODO-5-0 (DONE) Créer un dossier "books" dans "views" afin de regrouper les vues -->
 <!-- TODO-5-1 (DONE) Renommer la vue "book" en "index" (attention à adapter le contrôleur) -->
-<!-- TODO-5-2 Créer les vues manquantes afin de compléter le CRUD de "books" (create, edit, index, show) et
+<!-- TODO-5-2 (DONE) Créer les vues manquantes afin de compléter le CRUD de "books" (create, edit, index, show) et
     y inscrire quelque chose de temporaire -->
-<!-- TODO-5-4 Ajouter des boutons d'actions dans la vue "index"
+<!-- TODO-5-4 (DONE) Ajouter des boutons d'actions dans la vue "index"
     Ajouter un livre:
     <a href="TODO route Laravel" class="btn btn-primary float-right mb-2">Ajouter un livre</a>
     Afficher:
@@ -36,16 +36,16 @@
     2. Accéder aux message via Session::get("...") et l'afficher dans le div "container" au dessus du "yield content"
     3. Utiliser les alert bootstrap pour faire quelque de plus esthétique
 -->
-<!-- TODO-5-8 Créer le formulaire de création
+<!-- TODO-5-8 (DONE) Créer le formulaire de création
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/LYLrWMK
     - Tester l'ajout d'un livre (ne fonctionne pas ? c'est normal.)
     - Résoudre le problème du "mass assignement" empêchant de créer un livre
 -->
-<!-- TODO-5-9 Créer le formulaire d'édition
+<!-- TODO-5-9 (DONE) Créer le formulaire d'édition
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/zYzajBp
     - Tester l'édition d'un livre
 -->
-<!-- TODO-5-10 Compléter la vue permettant d'afficher les détails d'un livre
+<!-- TODO-5-10 (DONE) Compléter la vue permettant d'afficher les détails d'un livre
     - Récupérer le template fourni et compléter les TODOs https://codepen.io/spicypaper/pen/VwWdxdJ
     - Tester l'affichage d'un livre
 -->

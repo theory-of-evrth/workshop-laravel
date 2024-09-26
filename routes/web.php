@@ -19,10 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', [WelcomeController::class, 'index'])->name('welcome');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/books', [BookController::class, 'index'])->name('books');
+Route::get('/books/{id?}/{action?}', [BookController::class, 'index'])->name('books');
+Route::delete('books/{id}/delete', [BookController::class, 'destroy'])->name('books.destroy');
+Route::put('books/{id}/edit', [BookController::class, 'update'])->name('books.update');
+Route::post('books', [BookController::class, 'store'])->name('books.store');
 Route::get('/', [BookController::class, 'index'])->name('index');
 Route::get('/createbook', [BookController::class, 'createBook'])->name('createbook');
-Route::get('/editbook', [BookController::class, 'editBook'])->name('editbook');
 
 // TODO-1-2 (DONE) Remplacer la route "welcome" par la route "home" affichant le hello world
 

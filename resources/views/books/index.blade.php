@@ -7,7 +7,6 @@
 @endsection
 
 @section('content')
-    <p>Books available: </p>
 
     <a href="createbook" class="btn btn-primary float-right mb-2">Ajouter un livre</a>
     <table class="table">
@@ -27,9 +26,9 @@
         <td>{{ $book->pages }}</td>
         <td>{{ $book->quantity }}</td>
         <td>
-            <a class="btn btn-info" href="TODO route Laravel">Afficher</a>
-            <a class="btn btn-primary" href="editbook">Modifier</a>
-            <form action="TODO route Laravel" method="POST">
+            <a class="btn btn-info" href="books/{{$book->id}}">Afficher</a>
+            <a class="btn btn-primary" href="books/{{$book->id}}/edit">Modifier</a>
+            <form action="books/{{$book->id}}/delete" method="POST">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Supprimer</button>
